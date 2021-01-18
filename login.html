@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    
+<div class="container">
+   
+  <form method="post" id="form_id" name="myform">
+    <div class="form">
+      <div class="header">
+        <p>English (United States)<i class="fas fa-chevron-down"></i></p>
+         <img src="logo.png" alt="">
+        <h1 class="logo">Imatmi Engine</h1>
+      </div>
+     
+      <input id="username" placeholder="Phone number, email or username" type="text" spellcheck="false" name="username"><br>
+      <input id="password" class="psw" placeholder="Password" type="password" spellcheck="false" name="password">
+      <!-- <button class="btn" type="submit" onclick="validate()">Log In</button> -->
+      <input class="btn" type="button" value="Login" id="submit" onclick="validate()"/>
+   
+    </div>
+     </form>
+     
+  </div>
+
+  <script>
+    var attempt = 3; // Variable to count number of attempts.
+    // Below function Executes on click of login button.
+    function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "48478" && password == "admin")
+    {
+        alert ("Login successfully");
+        window.location = "/filezilla_userfolder/updated_admin/admin_page.html"; // Redirecting to other page.
+        return false;
+    }
+    else{
+        attempt --;// Decrementing by one.
+        alert("You have left "+attempt+" attempt;");
+        // Disabling fields after 3 attempts.
+        if( attempt == 0)
+    {
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("submit").disabled = true;
+        return false;
+    }
+    }
+    }
+
+    var empid = "48478";
+    sessionStorage.setItem("empid", empid);
+
+  </script>
+
+</body>
+</html>

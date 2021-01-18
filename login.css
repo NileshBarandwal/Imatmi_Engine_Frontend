@@ -1,0 +1,94 @@
+body {
+    background-color: whitesmoke;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form {
+    background-color: #fff;
+    height: 500px;
+    width: 350px;
+    border-radius: 10px 10px;
+  }
+
+  form:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    color: #b0b0b0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    top: 5px;
+  }
+  i {
+    position: absolute;
+    color: #c0c0c0;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  .logo{
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -100%);
+    font-family: "Pacifico", cursive;
+    font-style: italic;
+    width: 70% !important;
+  }
+
+  img {
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -30%);
+  }
+  .header {
+  }
+  input {
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+  }
+  ::placeholder {
+    color: #bebebe;
+  }
+  .psw {
+    margin-top: 60px;
+  }
+  .btn {
+    position: absolute;
+    top: 87.5%;
+    left: 50%;
+    transform: translate(-50%, -72.5%);
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    background-color: #3897f1;
+    color: white;
+    outline: none;
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+  .btn:focus {
+    background-color: #c3e0fa;
+  }
+  
